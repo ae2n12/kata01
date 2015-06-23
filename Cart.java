@@ -41,7 +41,7 @@ public class Cart {
 				}
 					
 			}
-		  else if (items[i] instanceof NoDiscountItem || items[i] instanceof WeightedGoods ){
+		  	else if (items[i] instanceof NoDiscountItem || items[i] instanceof WeightedGoods ){
 				total += items[i].applyRule();
 				
 			}
