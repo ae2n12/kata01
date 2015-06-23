@@ -32,6 +32,7 @@ public class WeightedGoods extends Item {
 
 	@Override
 	public double applyDiscountRule() {
+		//No discount applies
 		return getFinalPrice();		
 	}
 	
