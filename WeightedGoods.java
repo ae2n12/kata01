@@ -1,4 +1,4 @@
-
+package Kata01;
 public class WeightedGoods extends Item {
 
 	private double pricePerKilo;
@@ -24,9 +24,15 @@ public class WeightedGoods extends Item {
 		this.weight = weight;
 	}
 
-	public void applyRule() {
+	public double applyRule() {
 		setPrice();
-		setFinalPrice(getPrice());		
+		setFinalPrice(getPrice());	
+		return getFinalPrice();	
+	}
+
+	@Override
+	public double applyDiscountRule() {
+		return getFinalPrice();		
 	}
 	
 }

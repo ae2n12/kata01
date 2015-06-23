@@ -1,3 +1,4 @@
+package Kata01;
 
 public abstract class Item {
 
@@ -20,7 +21,10 @@ public abstract class Item {
 		this.price = d;
 	}
 	
-	public abstract void applyRule();
+	public abstract double applyRule();
+
+	public abstract double applyDiscountRule() ;
+	
 	
 	
 	

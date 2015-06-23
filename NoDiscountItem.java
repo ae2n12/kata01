@@ -1,9 +1,16 @@
+package Kata01;
 
 public class NoDiscountItem extends Item {
 
 	@Override
-	public void applyRule() {
-		setFinalPrice(getPrice());		
+	public double applyRule() {
+		setFinalPrice(getPrice());	
+		return getFinalPrice();	
+	}
+
+	@Override
+	public double applyDiscountRule() {
+		return getFinalPrice();	
 	}
 
 }

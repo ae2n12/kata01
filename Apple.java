@@ -1,3 +1,5 @@
+package Kata01;
+
 
 public class Apple extends ThreeForPound{
 

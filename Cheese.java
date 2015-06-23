@@ -1,3 +1,4 @@
+package Kata01;
 
 public class Cheese extends WeightedGoods{
 

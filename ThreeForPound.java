@@ -1,9 +1,16 @@
-
+package Kata01;
 public class ThreeForPound extends Item {
 	
-	public void applyRule() {
+	public double applyRule() {		
+		setFinalPrice(getPrice());	
+		return getFinalPrice();	
+	}
+
+	@Override
+	public double applyDiscountRule() {
 		//Only triggered the third time a ThreeForPound item is scanned
-		setFinalPrice(0.20);		
+		setFinalPrice(1.00 - (getPrice() * 2));	
+		return getFinalPrice();
 	}
 
 }
